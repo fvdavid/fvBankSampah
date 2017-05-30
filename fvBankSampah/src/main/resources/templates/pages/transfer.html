@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout">
+
+    <head>
+        <title>transfer</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        
+        <section layout:fragment="content">
+            <h1>
+                welcome to transfer page fvsaddam
+            </h1>
+
+            <div class="col-md-5">
+
+                <form>
+
+                    <div class="form-group row">
+                        <label for="jumlah">
+                            No Rek Tujuan
+                        </label>
+                        <input type="text" class="form-control" id="jumlah" aria-describedby="jumlah" placeholder="jumlah"/>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="jumlah">
+                            Jumlah
+                        </label>
+                        <input type="text" class="form-control" id="jumlah" aria-describedby="jumlah" placeholder="jumlah"/>
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="offset-sm-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">
+                            Transfer
+                        </button>
+                      </div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+        
+    </body>
+</html>
