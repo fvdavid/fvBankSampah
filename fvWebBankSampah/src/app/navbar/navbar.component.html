@@ -1,0 +1,38 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">{{title}}</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<div class="btn-group navbar-form navbar-right"> <!-- dropdown *ngIf="authService.sudahLogin()" -->
+				<button id="currentUserButton" type="button" class="btn btn-primary" dropdownToggle>
+					Halo, <!-- {{currentUser().fullname}} -->
+				</button>
+
+				<!-- <ul dropdownMenu role="menu" aria-labelledby="single-button"> -->
+				<!-- <ul role="menu" aria-labelledby="single-button">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Jual Sampah</a></li>
+					<li><a routerLink="about">Transfer</a></li>
+					<li><a routerLink="about">History</a></li>
+					<li><a (click)="logout()">Logout</a></li>
+				</ul> -->
+			</div>
+
+			<div class="navbar-form navbar-right">
+				<!-- *ngIf="!authService.sudahLogin()" -->
+				<button id="login" name="login" class="btn btn-primary" 
+					routerLink="login">
+					<i class="fa fa-sign-in" aria-hidden="true"></i> Login
+				</button>
+			</div>
+		</div>
+
+	</div>
+</nav>
